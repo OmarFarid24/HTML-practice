@@ -1,0 +1,268 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf4f1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group span {
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #028858;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #026b45;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-group {
+        flex: 1 1 calc(50% - 20px);
+        margin-right: 10px;
+    }
+
+    .form-group:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .form-group.radio-group,
+    .form-group.textarea-group,
+    .form-group.checkbox-label {
+        flex: 1 1 100%;
+    }
+
+    .form-group.textarea-group,
+    .form-group.checkbox-label {
+        margin-right: 0;
+    }
+
+    button {
+        align-self: flex-start;
+    }
+}
+
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(186, 238, 231);
+}
+
+label {
+    text-align: left;
+    color: rgb(48, 47, 47);
+}
+
+input[type=text], textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=radio] {
+    padding: 12px;
+    border: 1rem;
+    border-color: black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(21, 93, 55);
+}
+
+.Page {
+    width: 90%;
+    max-width: 480px;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 768px) {
+    
+    .Page {
+        width: 90%;
+        max-width: 900px;
+        border-radius: 1rem;
+        background-color: #f2f2f2;
+        padding: 1rem;
+        margin: 30px auto;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;}
+
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .form-group label {
+        margin-bottom: 5px;
+    font-weight: bold;
+    }
+    
+    .form-group input {
+        display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+    }
+    
+    .form {
+        margin-bottom: 0;
+    }
+
+    .form:nth-child(1),
+    .form:nth-child(2),
+    .form:nth-child(4) {
+        grid-column: span 1;
+    }
+
+    .form:nth-child(3),
+    .form:nth-child(5),
+    .form:nth-child(6) {
+        grid-column: span 2;
+    }
+    input[type=checkbox]{
+        text-align: safe center;
+    justify-content: safe center;
+    }
+    .box {
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+ */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="datetable2.css">
+</head>
+<body>
+    <div class="container">
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+            <div class="form-group">
+                <label for="first-name">First Name <span>*</span></label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name <span>*</span></label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Query Type <span>*</span></label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="query-type" value="general" required> General Enquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="query-type" value="support" required> Support Request
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message <span>*</span></label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="consent" required> I consent to being contacted by the team <span>*</span>
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
