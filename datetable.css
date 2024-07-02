@@ -51,7 +51,7 @@ input[type=submit]:hover {
     background-color: rgb(21, 93, 55);
 }
 
-.Page {
+.page {
     width: 90%;
     max-width: 480px;
     border-radius: 1rem;
@@ -65,7 +65,7 @@ input[type=submit]:hover {
 
 @media (min-width: 768px) {
     
-    .Page {
+    .page {
         width: 90%;
         max-width: 900px;
         border-radius: 1rem;
@@ -73,17 +73,18 @@ input[type=submit]:hover {
         padding: 1rem;
         margin: 30px auto;
     }
-    .form {
+    .content-conteiner {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
     
-    .form-group{
+    .name-container{
         display: flex;
-        flex-direction: column;
-        gap: 20px;}
-
+        justify-content: baseline;
+        align-items: baseline;
+        gap: 10px;}
+        
     .form-item {
         display: flex;
         flex-direction: column;
@@ -91,7 +92,11 @@ input[type=submit]:hover {
         min-width: 200px;
     }
     
-    
+    .radio-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 10px;}
     
     
     input[type=checkbox]{
